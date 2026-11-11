@@ -28,11 +28,11 @@ type(pcd)
 
 # EXERCÍCIOS DE 01. TIPOS DE VARIÁVEIS
 
-# 1. Faça um Programa que mostre a mensagem (print) "Alo mundo" na tela.
+#%% 1. Faça um Programa que mostre a mensagem (print) "Alo mundo" na tela.
 
 print("Alô mundo")
 
-# 2. Faça um Programa que peça um número (input) e então mostre a mensagem: "O número informado foi [número]."
+#%% 2. Faça um Programa que peça um número (input) e então mostre a mensagem: "O número informado foi [número]."
 
 numero = float(input("Insira um número "))
 output_numero = print(f"O número informado foi {numero}.")
@@ -55,6 +55,7 @@ n4 = float(input("Insira a quarta nota bimestral: "))
 output_media_notas = (n1 + n2 + n3 + n4) / 4
 
 print(f"A sua média é de {output_media_notas}.")
+
 #%% 5. Faça um Programa que converta metros para centímetros. Você pode pedir o comprimento em metros para o usuário (input).
 
 metros = int(input("Insira o tamanho em metros: "))
@@ -85,4 +86,44 @@ output_celsius = print(f"{temperatura_fahrenheit} Fahrenheit equivale a {(5/9)*(
 temperatura_celsius = float(input("Insira a temperatura em Celsius: "))
 
 output_fahrenheit = print(f"{temperatura_celsius}°C equivale a {((9/5*temperatura_celsius) + 32)}")
-# %%
+
+#%% 10. Tendo como dados de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal.
+
+h = float(input("Insira a sua altura: "))
+
+print(f"O seu peso ideal considerando a altura de {h} é de {(72.7 * h) - 58}.")
+
+#%% 11. Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal:
+
+sexo = str(input("Insira seu sexo (Homem ou Mulher): "))
+h = float(input("Insira a sua altura: "))
+
+if sexo == "Homem":
+    print(f"O seu peso ideal considerando a altura de {h} é de {(72.7 * h) - 58}.")
+else:
+    print(f"O seu peso ideal considerando a altura de {h} é de {(62.1 * h) - 44.7}.")
+        
+#%% 12. Calcule o salário bruto (horas * salario por hora)
+
+hora_trabalho = int(input("Insira quantas horas de trabalho você faz: "))
+hora_salario = float(input("Insira quanto você ganha "))
+
+print(f"O seu sálario mensal é de R$ {hora_trabalho * hora_salario}")
+
+#%% 13. Calcule o desconto do IR (11% do salário bruto)
+
+salario_bruto = float(input("Insira o seu salário: "))
+
+print(f"O seu salário líquido é de R$ {salario_bruto * (1 - 0.11)}")
+
+#%% 12. Calcule o desconto do INSS (8% do salário bruto)
+
+salario_bruto = float(input("Insira o seu salário: "))
+
+print(f"O desconto de INSS do seu salário é de R$ {salario_bruto * 0.08}")
+
+#%% 13.  Calcule o desconto do sindicato (5% do salário bruto)
+
+salario_bruto = float(input("Insira o seu salário: "))
+
+print(f"O desconto do Sindicato do seu salário é de R$ {salario_bruto * 0.05}")
